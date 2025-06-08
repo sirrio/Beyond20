@@ -121,11 +121,7 @@ function isFVTT(title) {
 }
 
 function fvttTitle(title) {
-    return title
-        .replace(" • Foundry Virtual Tabletop", "")
-        .replace(" • Foundry VTT", "")
-        .replace(" - Foundry VTT", "")
-        .replace(" - Foundry Virtual Tabletop", "");
+    return title.replace(" • Foundry Virtual Tabletop", "");
 }
 
 function urlMatches(url, matching) {
