@@ -568,7 +568,7 @@ function disconnectAllEvents() {
 }
 
 function setTitle() {
-    const chatControls = $("#chat-controls");
+    const chatControls = $("#chat-controls, #chat-message");
     if (chatControls.length) {
         const title = document.getElementsByTagName("title")[0];
         const worldTitle = game.world.title || game.world.data?.title || "";
